@@ -1,7 +1,7 @@
 function affix(element, top) {
   window.addEventListener('scroll', function() {
   	var scrollTop = window.scrollY;
-  	if( scrollTop > top ){
+  	if( scrollTop < top ){
   		element.classList.add('affix-top');
   		element.classList.remove('affix');
   	}
